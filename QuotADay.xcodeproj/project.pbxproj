@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2802159A1871DBA400DEBCBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280215991871DBA400DEBCBC /* Foundation.framework */; };
+		2802159C1871DBA400DEBCBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2802159B1871DBA400DEBCBC /* CoreGraphics.framework */; };
+		2802159E1871DBA400DEBCBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2802159D1871DBA400DEBCBC /* UIKit.framework */; };
+		280215A41871DBA400DEBCBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 280215A21871DBA400DEBCBC /* InfoPlist.strings */; };
+		280215A61871DBA400DEBCBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 280215A51871DBA400DEBCBC /* main.m */; };
+		280215AA1871DBA400DEBCBC /* MyAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 280215A91871DBA400DEBCBC /* MyAppAppDelegate.m */; };
+		280215AD1871DBA400DEBCBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280215AB1871DBA400DEBCBC /* Main.storyboard */; };
+		280215B01871DBA400DEBCBC /* MyAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280215AF1871DBA400DEBCBC /* MyAppViewController.m */; };
+		280215B21871DBA400DEBCBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280215B11871DBA400DEBCBC /* Images.xcassets */; };
+		280215B91871DBA400DEBCBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280215B81871DBA400DEBCBC /* XCTest.framework */; };
+		280215BA1871DBA400DEBCBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280215991871DBA400DEBCBC /* Foundation.framework */; };
+		280215BB1871DBA400DEBCBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2802159D1871DBA400DEBCBC /* UIKit.framework */; };
+		280215C31871DBA400DEBCBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 280215C11871DBA400DEBCBC /* InfoPlist.strings */; };
+		280215C51871DBA400DEBCBC /* QuotADayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 280215C41871DBA400DEBCBC /* QuotADayTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		280215BC1871DBA400DEBCBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2802158E1871DBA400DEBCBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 280215951871DBA400DEBCBC;
+			remoteInfo = QuotADay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		280215961871DBA400DEBCBC /* QuotADay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuotADay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		280215991871DBA400DEBCBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2802159B1871DBA400DEBCBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2802159D1871DBA400DEBCBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		280215A11871DBA400DEBCBC /* QuotADay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuotADay-Info.plist"; sourceTree = "<group>"; };
+		280215A31871DBA400DEBCBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		280215A51871DBA400DEBCBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		280215A71871DBA400DEBCBC /* QuotADay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuotADay-Prefix.pch"; sourceTree = "<group>"; };
+		280215A81871DBA400DEBCBC /* MyAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAppAppDelegate.h; sourceTree = "<group>"; };
+		280215A91871DBA400DEBCBC /* MyAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppAppDelegate.m; sourceTree = "<group>"; };
+		280215AC1871DBA400DEBCBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		280215AE1871DBA400DEBCBC /* MyAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAppViewController.h; sourceTree = "<group>"; };
+		280215AF1871DBA400DEBCBC /* MyAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppViewController.m; sourceTree = "<group>"; };
+		280215B11871DBA400DEBCBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		280215B71871DBA400DEBCBC /* QuotADayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotADayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		280215B81871DBA400DEBCBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		280215C01871DBA400DEBCBC /* QuotADayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuotADayTests-Info.plist"; sourceTree = "<group>"; };
+		280215C21871DBA400DEBCBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		280215C41871DBA400DEBCBC /* QuotADayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuotADayTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		280215931871DBA400DEBCBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2802159C1871DBA400DEBCBC /* CoreGraphics.framework in Frameworks */,
+				2802159E1871DBA400DEBCBC /* UIKit.framework in Frameworks */,
+				2802159A1871DBA400DEBCBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		280215B41871DBA400DEBCBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280215B91871DBA400DEBCBC /* XCTest.framework in Frameworks */,
+				280215BB1871DBA400DEBCBC /* UIKit.framework in Frameworks */,
+				280215BA1871DBA400DEBCBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2802158D1871DBA400DEBCBC = {
+			isa = PBXGroup;
+			children = (
+				2802159F1871DBA400DEBCBC /* QuotADay */,
+				280215BE1871DBA400DEBCBC /* QuotADayTests */,
+				280215981871DBA400DEBCBC /* Frameworks */,
+				280215971871DBA400DEBCBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		280215971871DBA400DEBCBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				280215961871DBA400DEBCBC /* QuotADay.app */,
+				280215B71871DBA400DEBCBC /* QuotADayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		280215981871DBA400DEBCBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				280215991871DBA400DEBCBC /* Foundation.framework */,
+				2802159B1871DBA400DEBCBC /* CoreGraphics.framework */,
+				2802159D1871DBA400DEBCBC /* UIKit.framework */,
+				280215B81871DBA400DEBCBC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2802159F1871DBA400DEBCBC /* QuotADay */ = {
+			isa = PBXGroup;
+			children = (
+				280215A81871DBA400DEBCBC /* MyAppAppDelegate.h */,
+				280215A91871DBA400DEBCBC /* MyAppAppDelegate.m */,
+				280215AB1871DBA400DEBCBC /* Main.storyboard */,
+				280215AE1871DBA400DEBCBC /* MyAppViewController.h */,
+				280215AF1871DBA400DEBCBC /* MyAppViewController.m */,
+				280215B11871DBA400DEBCBC /* Images.xcassets */,
+				280215A01871DBA400DEBCBC /* Supporting Files */,
+			);
+			path = QuotADay;
+			sourceTree = "<group>";
+		};
+		280215A01871DBA400DEBCBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				280215A11871DBA400DEBCBC /* QuotADay-Info.plist */,
+				280215A21871DBA400DEBCBC /* InfoPlist.strings */,
+				280215A51871DBA400DEBCBC /* main.m */,
+				280215A71871DBA400DEBCBC /* QuotADay-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		280215BE1871DBA400DEBCBC /* QuotADayTests */ = {
+			isa = PBXGroup;
+			children = (
+				280215C41871DBA400DEBCBC /* QuotADayTests.m */,
+				280215BF1871DBA400DEBCBC /* Supporting Files */,
+			);
+			path = QuotADayTests;
+			sourceTree = "<group>";
+		};
+		280215BF1871DBA400DEBCBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				280215C01871DBA400DEBCBC /* QuotADayTests-Info.plist */,
+				280215C11871DBA400DEBCBC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		280215951871DBA400DEBCBC /* QuotADay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 280215C81871DBA400DEBCBC /* Build configuration list for PBXNativeTarget "QuotADay" */;
+			buildPhases = (
+				280215921871DBA400DEBCBC /* Sources */,
+				280215931871DBA400DEBCBC /* Frameworks */,
+				280215941871DBA400DEBCBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuotADay;
+			productName = QuotADay;
+			productReference = 280215961871DBA400DEBCBC /* QuotADay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		280215B61871DBA400DEBCBC /* QuotADayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 280215CB1871DBA400DEBCBC /* Build configuration list for PBXNativeTarget "QuotADayTests" */;
+			buildPhases = (
+				280215B31871DBA400DEBCBC /* Sources */,
+				280215B41871DBA400DEBCBC /* Frameworks */,
+				280215B51871DBA400DEBCBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				280215BD1871DBA400DEBCBC /* PBXTargetDependency */,
+			);
+			name = QuotADayTests;
+			productName = QuotADayTests;
+			productReference = 280215B71871DBA400DEBCBC /* QuotADayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2802158E1871DBA400DEBCBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MyApp;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Varsha Godbole";
+				TargetAttributes = {
+					280215B61871DBA400DEBCBC = {
+						TestTargetID = 280215951871DBA400DEBCBC;
+					};
+				};
+			};
+			buildConfigurationList = 280215911871DBA400DEBCBC /* Build configuration list for PBXProject "QuotADay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2802158D1871DBA400DEBCBC;
+			productRefGroup = 280215971871DBA400DEBCBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				280215951871DBA400DEBCBC /* QuotADay */,
+				280215B61871DBA400DEBCBC /* QuotADayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		280215941871DBA400DEBCBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280215B21871DBA400DEBCBC /* Images.xcassets in Resources */,
+				280215A41871DBA400DEBCBC /* InfoPlist.strings in Resources */,
+				280215AD1871DBA400DEBCBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		280215B51871DBA400DEBCBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280215C31871DBA400DEBCBC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		280215921871DBA400DEBCBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280215B01871DBA400DEBCBC /* MyAppViewController.m in Sources */,
+				280215AA1871DBA400DEBCBC /* MyAppAppDelegate.m in Sources */,
+				280215A61871DBA400DEBCBC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		280215B31871DBA400DEBCBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280215C51871DBA400DEBCBC /* QuotADayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		280215BD1871DBA400DEBCBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 280215951871DBA400DEBCBC /* QuotADay */;
+			targetProxy = 280215BC1871DBA400DEBCBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		280215A21871DBA400DEBCBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				280215A31871DBA400DEBCBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		280215AB1871DBA400DEBCBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				280215AC1871DBA400DEBCBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		280215C11871DBA400DEBCBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				280215C21871DBA400DEBCBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		280215C61871DBA400DEBCBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		280215C71871DBA400DEBCBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		280215C91871DBA400DEBCBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuotADay/QuotADay-Prefix.pch";
+				INFOPLIST_FILE = "QuotADay/QuotADay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		280215CA1871DBA400DEBCBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuotADay/QuotADay-Prefix.pch";
+				INFOPLIST_FILE = "QuotADay/QuotADay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		280215CC1871DBA400DEBCBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuotADay.app/QuotADay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuotADay/QuotADay-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "QuotADayTests/QuotADayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		280215CD1871DBA400DEBCBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuotADay.app/QuotADay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuotADay/QuotADay-Prefix.pch";
+				INFOPLIST_FILE = "QuotADayTests/QuotADayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		280215911871DBA400DEBCBC /* Build configuration list for PBXProject "QuotADay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				280215C61871DBA400DEBCBC /* Debug */,
+				280215C71871DBA400DEBCBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		280215C81871DBA400DEBCBC /* Build configuration list for PBXNativeTarget "QuotADay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				280215C91871DBA400DEBCBC /* Debug */,
+				280215CA1871DBA400DEBCBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		280215CB1871DBA400DEBCBC /* Build configuration list for PBXNativeTarget "QuotADayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				280215CC1871DBA400DEBCBC /* Debug */,
+				280215CD1871DBA400DEBCBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2802158E1871DBA400DEBCBC /* Project object */;
+}
