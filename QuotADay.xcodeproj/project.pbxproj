@@ -13,14 +13,17 @@
 		280215A41871DBA400DEBCBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 280215A21871DBA400DEBCBC /* InfoPlist.strings */; };
 		280215A61871DBA400DEBCBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 280215A51871DBA400DEBCBC /* main.m */; };
 		280215AA1871DBA400DEBCBC /* MyAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 280215A91871DBA400DEBCBC /* MyAppAppDelegate.m */; };
-		280215AD1871DBA400DEBCBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280215AB1871DBA400DEBCBC /* Main.storyboard */; };
-		280215B01871DBA400DEBCBC /* MyAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280215AF1871DBA400DEBCBC /* MyAppViewController.m */; };
 		280215B21871DBA400DEBCBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280215B11871DBA400DEBCBC /* Images.xcassets */; };
 		280215B91871DBA400DEBCBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280215B81871DBA400DEBCBC /* XCTest.framework */; };
 		280215BA1871DBA400DEBCBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280215991871DBA400DEBCBC /* Foundation.framework */; };
 		280215BB1871DBA400DEBCBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2802159D1871DBA400DEBCBC /* UIKit.framework */; };
 		280215C31871DBA400DEBCBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 280215C11871DBA400DEBCBC /* InfoPlist.strings */; };
 		280215C51871DBA400DEBCBC /* QuotADayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 280215C41871DBA400DEBCBC /* QuotADayTests.m */; };
+		280215D01871DBE200DEBCBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280215CF1871DBE200DEBCBC /* Main.storyboard */; };
+		280215D61871DC0000DEBCBC /* myData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 280215D11871DC0000DEBCBC /* myData.plist */; };
+		280215D71871DC0000DEBCBC /* MyAppContentsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 280215D31871DC0000DEBCBC /* MyAppContentsModel.m */; };
+		280215D81871DC0000DEBCBC /* MyAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280215D51871DC0000DEBCBC /* MyAppViewController.m */; };
+		280215E21871DCD400DEBCBC /* libPXAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 280215DF1871DCB500DEBCBC /* libPXAPI.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +33,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 280215951871DBA400DEBCBC;
 			remoteInfo = QuotADay;
+		};
+		280215DE1871DCB500DEBCBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 280215D91871DCB500DEBCBC /* PXAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5EB9AFC415C34F3F002E7F6D;
+			remoteInfo = PXAPI;
+		};
+		280215E01871DCB500DEBCBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 280215D91871DCB500DEBCBC /* PXAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5EB9AFD515C34F3F002E7F6D;
+			remoteInfo = tests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -44,15 +61,19 @@
 		280215A71871DBA400DEBCBC /* QuotADay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuotADay-Prefix.pch"; sourceTree = "<group>"; };
 		280215A81871DBA400DEBCBC /* MyAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAppAppDelegate.h; sourceTree = "<group>"; };
 		280215A91871DBA400DEBCBC /* MyAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppAppDelegate.m; sourceTree = "<group>"; };
-		280215AC1871DBA400DEBCBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		280215AE1871DBA400DEBCBC /* MyAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAppViewController.h; sourceTree = "<group>"; };
-		280215AF1871DBA400DEBCBC /* MyAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppViewController.m; sourceTree = "<group>"; };
 		280215B11871DBA400DEBCBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		280215B71871DBA400DEBCBC /* QuotADayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotADayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		280215B81871DBA400DEBCBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		280215C01871DBA400DEBCBC /* QuotADayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuotADayTests-Info.plist"; sourceTree = "<group>"; };
 		280215C21871DBA400DEBCBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		280215C41871DBA400DEBCBC /* QuotADayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuotADayTests.m; sourceTree = "<group>"; };
+		280215CF1871DBE200DEBCBC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		280215D11871DC0000DEBCBC /* myData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = myData.plist; sourceTree = "<group>"; };
+		280215D21871DC0000DEBCBC /* MyAppContentsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAppContentsModel.h; sourceTree = "<group>"; };
+		280215D31871DC0000DEBCBC /* MyAppContentsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAppContentsModel.m; sourceTree = "<group>"; };
+		280215D41871DC0000DEBCBC /* MyAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAppViewController.h; sourceTree = "<group>"; };
+		280215D51871DC0000DEBCBC /* MyAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAppViewController.m; sourceTree = "<group>"; };
+		280215D91871DCB500DEBCBC /* PXAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PXAPI.xcodeproj; path = "500px-iOS-api/PXAPI.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +84,7 @@
 				2802159C1871DBA400DEBCBC /* CoreGraphics.framework in Frameworks */,
 				2802159E1871DBA400DEBCBC /* UIKit.framework in Frameworks */,
 				2802159A1871DBA400DEBCBC /* Foundation.framework in Frameworks */,
+				280215E21871DCD400DEBCBC /* libPXAPI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,11 +134,13 @@
 		2802159F1871DBA400DEBCBC /* QuotADay */ = {
 			isa = PBXGroup;
 			children = (
-				280215A81871DBA400DEBCBC /* MyAppAppDelegate.h */,
-				280215A91871DBA400DEBCBC /* MyAppAppDelegate.m */,
-				280215AB1871DBA400DEBCBC /* Main.storyboard */,
-				280215AE1871DBA400DEBCBC /* MyAppViewController.h */,
-				280215AF1871DBA400DEBCBC /* MyAppViewController.m */,
+				280215D91871DCB500DEBCBC /* PXAPI.xcodeproj */,
+				280215CF1871DBE200DEBCBC /* Main.storyboard */,
+				280215D11871DC0000DEBCBC /* myData.plist */,
+				280215D21871DC0000DEBCBC /* MyAppContentsModel.h */,
+				280215D31871DC0000DEBCBC /* MyAppContentsModel.m */,
+				280215D41871DC0000DEBCBC /* MyAppViewController.h */,
+				280215D51871DC0000DEBCBC /* MyAppViewController.m */,
 				280215B11871DBA400DEBCBC /* Images.xcassets */,
 				280215A01871DBA400DEBCBC /* Supporting Files */,
 			);
@@ -126,6 +150,8 @@
 		280215A01871DBA400DEBCBC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				280215A81871DBA400DEBCBC /* MyAppAppDelegate.h */,
+				280215A91871DBA400DEBCBC /* MyAppAppDelegate.m */,
 				280215A11871DBA400DEBCBC /* QuotADay-Info.plist */,
 				280215A21871DBA400DEBCBC /* InfoPlist.strings */,
 				280215A51871DBA400DEBCBC /* main.m */,
@@ -150,6 +176,15 @@
 				280215C11871DBA400DEBCBC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		280215DA1871DCB500DEBCBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				280215DF1871DCB500DEBCBC /* libPXAPI.a */,
+				280215E11871DCB500DEBCBC /* tests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +251,12 @@
 			mainGroup = 2802158D1871DBA400DEBCBC;
 			productRefGroup = 280215971871DBA400DEBCBC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 280215DA1871DCB500DEBCBC /* Products */;
+					ProjectRef = 280215D91871DCB500DEBCBC /* PXAPI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				280215951871DBA400DEBCBC /* QuotADay */,
@@ -224,14 +265,32 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		280215DF1871DCB500DEBCBC /* libPXAPI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPXAPI.a;
+			remoteRef = 280215DE1871DCB500DEBCBC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		280215E11871DCB500DEBCBC /* tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = tests.octest;
+			remoteRef = 280215E01871DCB500DEBCBC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		280215941871DBA400DEBCBC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280215D01871DBE200DEBCBC /* Main.storyboard in Resources */,
 				280215B21871DBA400DEBCBC /* Images.xcassets in Resources */,
+				280215D61871DC0000DEBCBC /* myData.plist in Resources */,
 				280215A41871DBA400DEBCBC /* InfoPlist.strings in Resources */,
-				280215AD1871DBA400DEBCBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				280215B01871DBA400DEBCBC /* MyAppViewController.m in Sources */,
 				280215AA1871DBA400DEBCBC /* MyAppAppDelegate.m in Sources */,
 				280215A61871DBA400DEBCBC /* main.m in Sources */,
+				280215D81871DC0000DEBCBC /* MyAppViewController.m in Sources */,
+				280215D71871DC0000DEBCBC /* MyAppContentsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +341,6 @@
 				280215A31871DBA400DEBCBC /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		280215AB1871DBA400DEBCBC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				280215AC1871DBA400DEBCBC /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		280215C11871DBA400DEBCBC /* InfoPlist.strings */ = {
@@ -381,7 +433,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuotADay/QuotADay-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/**",
+				);
 				INFOPLIST_FILE = "QuotADay/QuotADay-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,7 +452,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuotADay/QuotADay-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/**",
+				);
 				INFOPLIST_FILE = "QuotADay/QuotADay-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
