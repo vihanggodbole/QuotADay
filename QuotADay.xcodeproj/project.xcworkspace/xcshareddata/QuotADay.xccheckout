@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>69F1DC67-241B-44DF-BA2D-4FB8E1FF9B4B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QuotADay</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>14CE29EF-AD4B-44D1-9A33-DD73100FFC78</key>
+		<string>git://github.com/500px/500px-iOS-api.git</string>
+		<key>1AEC540B-9A30-4A86-B078-ABFA7E7A1D04</key>
+		<string>https://github.com/vihanggodbole/QuotADay.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>QuotADay.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>14CE29EF-AD4B-44D1-9A33-DD73100FFC78</key>
+		<string>../../500px-iOS-api</string>
+		<key>1AEC540B-9A30-4A86-B078-ABFA7E7A1D04</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vihanggodbole/QuotADay.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1AEC540B-9A30-4A86-B078-ABFA7E7A1D04</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>14CE29EF-AD4B-44D1-9A33-DD73100FFC78</string>
+			<key>IDESourceControlWCCName</key>
+			<string>500px-iOS-api</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1AEC540B-9A30-4A86-B078-ABFA7E7A1D04</string>
+			<key>IDESourceControlWCCName</key>
+			<string>QuotADay</string>
+		</dict>
+	</array>
+</dict>
+</plist>

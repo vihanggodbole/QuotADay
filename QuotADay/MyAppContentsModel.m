@@ -28,13 +28,24 @@
     NSMutableDictionary *dataFromPlist = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
     self.quotes = [dataFromPlist objectForKey:@"quoteArray"];
     
-    //day number
+    //compare date
+    NSDate *date = [NSDate date];
+    NSDate *dateFromPlist = [dataFromPlist objectForKey:@"todayDate"];
+    NSDateFormatter *dateformatter = [[NSDateFormatter alloc] init];
+    [dateformatter setDateStyle:NSDateFormatterMediumStyle];
+    NSString *dateInFile = [dateformatter stringFromDate:dateFromPlist];    //get the dates in strings
+    NSString *today = [dateformatter stringFromDate:date];
+
     NSNumber *dayNumber = [dataFromPlist objectForKey:@"dayNumber"];
     int temp = [dayNumber intValue];
-    temp++;
-    NSNumber *newdayNumber = [[NSNumber alloc] initWithInt:temp];
-    [dataFromPlist setValue:newdayNumber forKey:@"dayNumber"];
-    [dataFromPlist writeToFile:path atomically:YES];    //write back to plist
+    //change the value of index and date in the plist the next day
+    if(![today isEqualToString:dateInFile]){
+        temp++;
+        NSNumber *newdayNumber = [[NSNumber alloc] initWithInt:temp];
+        [dataFromPlist setValue:date forKey:@"todayDate"];  //write today's date to the plist
+        [dataFromPlist setValue:newdayNumber forKey:@"dayNumber"];
+        [dataFromPlist writeToFile:path atomically:YES];    //write back to plist
+    }
     NSString *quoteOfTheDay = [NSString stringWithFormat:@"%@",[self.quotes objectAtIndex:temp]];
     return quoteOfTheDay;
 }

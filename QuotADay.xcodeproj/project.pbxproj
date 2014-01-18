@@ -24,6 +24,7 @@
 		280215D71871DC0000DEBCBC /* MyAppContentsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 280215D31871DC0000DEBCBC /* MyAppContentsModel.m */; };
 		280215D81871DC0000DEBCBC /* MyAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280215D51871DC0000DEBCBC /* MyAppViewController.m */; };
 		280215E21871DCD400DEBCBC /* libPXAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 280215DF1871DCB500DEBCBC /* libPXAPI.a */; };
+		DAD6A942AE1B4214B9A52A10 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A35D9597F2E46BB81D3452A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		280215D41871DC0000DEBCBC /* MyAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAppViewController.h; sourceTree = "<group>"; };
 		280215D51871DC0000DEBCBC /* MyAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAppViewController.m; sourceTree = "<group>"; };
 		280215D91871DCB500DEBCBC /* PXAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PXAPI.xcodeproj; path = "500px-iOS-api/PXAPI.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		5A35D9597F2E46BB81D3452A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		934CAEF71063437B85C8170D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 				2802159E1871DBA400DEBCBC /* UIKit.framework in Frameworks */,
 				2802159A1871DBA400DEBCBC /* Foundation.framework in Frameworks */,
 				280215E21871DCD400DEBCBC /* libPXAPI.a in Frameworks */,
+				DAD6A942AE1B4214B9A52A10 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +112,7 @@
 				280215BE1871DBA400DEBCBC /* QuotADayTests */,
 				280215981871DBA400DEBCBC /* Frameworks */,
 				280215971871DBA400DEBCBC /* Products */,
+				934CAEF71063437B85C8170D /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +132,7 @@
 				2802159B1871DBA400DEBCBC /* CoreGraphics.framework */,
 				2802159D1871DBA400DEBCBC /* UIKit.framework */,
 				280215B81871DBA400DEBCBC /* XCTest.framework */,
+				5A35D9597F2E46BB81D3452A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -194,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 280215C81871DBA400DEBCBC /* Build configuration list for PBXNativeTarget "QuotADay" */;
 			buildPhases = (
+				2FC11E634C35423C954F9019 /* Check Pods Manifest.lock */,
 				280215921871DBA400DEBCBC /* Sources */,
 				280215931871DBA400DEBCBC /* Frameworks */,
 				280215941871DBA400DEBCBC /* Resources */,
+				E5FAAE21E2264F69B6483DAF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,6 +311,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FC11E634C35423C954F9019 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5FAAE21E2264F69B6483DAF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		280215921871DBA400DEBCBC /* Sources */ = {
@@ -428,18 +469,20 @@
 		};
 		280215C91871DBA400DEBCBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 934CAEF71063437B85C8170D /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuotADay/QuotADay-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
+					"$(inherited)/**",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/**",
 				);
 				INFOPLIST_FILE = "QuotADay/QuotADay-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -447,18 +490,20 @@
 		};
 		280215CA1871DBA400DEBCBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 934CAEF71063437B85C8170D /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuotADay/QuotADay-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
+					"$(inherited)/**",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/**",
 				);
 				INFOPLIST_FILE = "QuotADay/QuotADay-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -525,6 +570,7 @@
 				280215CA1871DBA400DEBCBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		280215CB1871DBA400DEBCBC /* Build configuration list for PBXNativeTarget "QuotADayTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +579,7 @@
 				280215CD1871DBA400DEBCBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
